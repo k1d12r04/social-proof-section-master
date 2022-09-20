@@ -1,0 +1,22 @@
+{
+  "name": "social-proof-section",
+  "version": "1.0.0",
+  "description": "challenge from frontendmentor",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k1d12r04/social-proof-section-master.git"
+  },
+  "author": "Kadir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k1d12r04/social-proof-section-master/issues"
+  },
+  "homepage": "https://github.com/k1d12r04/social-proof-section-master#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
