@@ -20,17 +20,23 @@ img {
   max-width: 100%; }
 
 .container {
-  width: calc(min(90%, 60rem));
+  width: calc(min(90%, 110rem));
   margin-inline: auto; }
 
 .showcase {
   text-align: center;
-  margin-top: 7rem; }
+  margin-top: 7rem;
+  display: grid; }
   .showcase__header__title {
     font-size: 4rem;
     line-height: 1;
     color: #502050;
     margin-bottom: 1rem; }
+  .showcase__header__para {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: #937b92; }
   .showcase__rating {
     display: grid;
     gap: 1.5rem;
@@ -44,16 +50,13 @@ img {
       font-size: 1.5rem;
       font-weight: 700;
       color: #502050; }
-  .showcase__header__para {
-    font-size: 1.8rem;
-    line-height: 1.6;
-    margin-bottom: 3rem; }
   .showcase__rating__container {
-    width: 100%;
+    width: 80%;
     background-color: #f7f2f7;
     border-radius: 0.5rem;
     padding-top: 1rem;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    margin-inline: auto; }
 
 .testimonial {
   display: grid;
@@ -83,4 +86,52 @@ img {
         color: #ee68a4;
         font-size: 1.8rem; }
     .testimonial__box__para {
-      font-size: 1.8rem; }
+      font-size: 1.7rem;
+      line-height: 1.6; }
+
+/* media queries */
+@media only screen and (min-width: 36.5em) {
+  .showcase__header__container {
+    width: 60%;
+    margin-inline: auto; }
+  .showcase__rating {
+    width: 70%;
+    margin-inline: auto; }
+  .testimonial {
+    width: 70%;
+    margin-inline: auto; } }
+
+@media only screen and (min-width: 60em) {
+  .showcase {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 3rem; }
+    .showcase__header__container {
+      width: 90%; }
+    .showcase__rating {
+      width: 100%; }
+    .showcase__rating__container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-inline: 0; }
+      .showcase__rating__container:nth-child(2) {
+        margin-left: 4rem; }
+      .showcase__rating__container:nth-child(3) {
+        margin-left: 8rem; }
+    .showcase__rating__stars {
+      margin-left: 2rem; }
+    .showcase__rating__para {
+      margin-top: 0;
+      height: 60%; }
+  .testimonial {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    align-items: start; }
+    .testimonial__box:nth-child(2) {
+      margin-top: 4rem; }
+    .testimonial__box:nth-child(3) {
+      margin-top: 8rem; } }
