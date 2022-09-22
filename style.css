@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+/* VARIABLES */
+/* primary colors */
+/* neutral colors */
 *,
 *::before,
 *::after {
@@ -10,6 +13,74 @@
 html {
   font-size: 62.5%; }
 
-/* VARIABLES */
-/* primary colors */
-/* neutral colors */
+body {
+  font-family: "League Spartan", sans-serif; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  width: calc(min(90%, 60rem));
+  margin-inline: auto; }
+
+.showcase {
+  text-align: center;
+  margin-top: 7rem; }
+  .showcase__header__title {
+    font-size: 4rem;
+    line-height: 1;
+    color: #502050;
+    margin-bottom: 1rem; }
+  .showcase__rating {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 4rem; }
+    .showcase__rating__stars {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem; }
+    .showcase__rating__para {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #502050; }
+  .showcase__header__para {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 3rem; }
+  .showcase__rating__container {
+    width: 100%;
+    background-color: #f7f2f7;
+    border-radius: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+
+.testimonial {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 7rem; }
+  .testimonial__box {
+    background-color: #502050;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 0.5rem; }
+    .testimonial__box__container {
+      width: 85%;
+      margin-inline: auto; }
+    .testimonial__box__header {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem; }
+      .testimonial__box__header__img {
+        border-radius: 50%;
+        width: 5rem; }
+      .testimonial__box__header__userInfo__title {
+        font-size: 1.8rem;
+        font-weight: 700; }
+      .testimonial__box__header__userInfo__verified {
+        color: #ee68a4;
+        font-size: 1.8rem; }
+    .testimonial__box__para {
+      font-size: 1.8rem; }
