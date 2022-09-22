@@ -14,7 +14,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "League Spartan", sans-serif; }
+  font-family: "League Spartan", sans-serif;
+  position: relative; }
 
 img {
   max-width: 100%; }
@@ -23,9 +24,20 @@ img {
   width: calc(min(90%, 110rem));
   margin-inline: auto; }
 
+.bg-pattern-top-desktop,
+.bg-pattern-bottom-desktop {
+  display: none; }
+
+.bg-pattern-top-mobile,
+.bg-pattern-bottom-mobile {
+  position: absolute; }
+
+.bg-pattern-bottom-mobile {
+  bottom: 0; }
+
 .showcase {
   text-align: center;
-  margin-top: 7rem;
+  padding-top: 7rem;
   display: grid; }
   .showcase__header__title {
     font-size: 4rem;
@@ -61,7 +73,7 @@ img {
 .testimonial {
   display: grid;
   gap: 2rem;
-  margin-bottom: 7rem; }
+  padding-bottom: 7rem; }
   .testimonial__box {
     background-color: #502050;
     color: white;
@@ -102,6 +114,19 @@ img {
     margin-inline: auto; } }
 
 @media only screen and (min-width: 60em) {
+  .bg-pattern-top-mobile,
+  .bg-pattern-bottom-mobile {
+    display: none; }
+  .bg-pattern-top-desktop,
+  .bg-pattern-bottom-desktop {
+    position: absolute;
+    display: block; }
+  .bg-pattern-top-desktop {
+    left: 0;
+    transform: translateX(-20%); }
+  .bg-pattern-bottom-desktop {
+    right: 0;
+    transform: translateX(-5%); }
   .showcase {
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr;
